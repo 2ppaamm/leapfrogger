@@ -294,6 +294,7 @@ function centerContent()
    	   $('.media-btns').css('margin-top', '440px');
 	   $('.intro-info-wrapper').css('display', 'none');
 	   $('.video-content .overlay').css('background', 'none');
+	   $('#video-background').prop('muted', false); //unmute
 	});
 
 	$(".pause-btn").on('click', function() {
@@ -307,6 +308,7 @@ function centerContent()
   	   $('.media-btns').css('margin-top', '0px');
 	   $('.video-content .overlay').css('background', 'rgba(0,0,0,0.4) url(img/overlay-pat.png)');
 	   $('.video-container #player').css('display', 'none');
+	   $('#video-background').prop('muted', true); //unmute
 	});
 
 $(document).ready(function(){
