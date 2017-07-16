@@ -118,25 +118,25 @@
     <div class="section-wrapper wp8 delay-05s">
     <div class="row">
       <div class="col-sm-12 col-md-6 no-padding">
-        <div class="thumbnail">
-            <video height="auto" controls="controls" preload="none" onclick="this.play()">
+        <div class="video-background">
+            <video height="auto" poster="img/video-img.jpg" controls="controls" preload="none" onclick="this.play()">
                 <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
             </video>
-          <div class="caption">
-            <h3>Title of doc</h3>
-            <p>Synopsis</p>
-          </div>
+            <div class="actor-info">
+                <h4 class="heading">Clash of the Titans</h4>
+                <h5 class="sub-heading">Synopsis</h5>
+            </div> <!-- /.actor-info -->        
         </div>
       </div>
       <div class="col-sm-12 col-md-6 no-padding">
-        <div class="thumbnail">
-            <video height="auto" controls="controls" preload="none" onclick="this.play()">
+        <div class="video-background">
+            <video height="auto" poster="img/video-img.jpg" controls="controls" preload="none" onclick="this.play()">
                 <source src="https://player.vimeo.com/external/19816776.hd.mp4?s=4500615818e69953e6bc9a436c59e982da2608cd&profile_id=113" type="video/mp4">
             </video>
-          <div class="caption">
-            <h3>Title of doc</h3>
-            <p>Synopsis</p>
-          </div>
+            <div class="actor-info">
+                <h4 class="heading">The Adventures of Bot Bot</h4>
+                <h5 class="sub-heading">Synopsis</h5>
+            </div> <!-- /.actor-info -->        
         </div>
       </div>
     </div>
@@ -209,9 +209,7 @@
             
             <div class="col-lg-6 wp2 delay-1s">  
             <h2>Nick <span class="text-color">Manley</span></h2>
-            <h4 class="sub-text">Founder <br>
-                                 Creative Director<br>
-            </h4>         
+            <h4 class="sub-text">Creative Founder</h4>         
             <br>
             
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean eget dolor. Aenean massa. Natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Corper ipsum rutrum nunc. Vestibulum volutpat pretium libero ultricies nec. 
@@ -235,8 +233,7 @@
             
             <div class="col-lg-6 wp2 delay-1s">  
             <h2>Pamela <span class="text-color">Lim</span></h2>
-            <h4 class="sub-text">Founder <br>
-                                 Business Development <br>
+            <h4 class="sub-text">Business Founder<br>
             </h4>
             <br>
 
@@ -394,13 +391,14 @@
   
     <!-- Actors Section -->
     <section id="actors">
+        <div id="instafeed"></div>
         <div class="container"> 
             <div class="row">      
                 <div class="col-lg-12">
-        		<h1 class="section-title">Our Topics</h1>
+                <h1 class="section-title">Our Topics</h1>
                 
-        			<div id="owl-actors" class="owl-carousel owl-theme">
-        				
+                    <div class="owl-actors owl-carousel owl-theme">
+                        
                         <div class="item" >
                             <div class="col-md-12 wp6">
                                 <div class="actor">
@@ -412,12 +410,6 @@
                                             <li><a href="#"><i class="fa fa-money"></i><h5>Finance</h5></a></li>
                                             <li><p>Transactions either build or strip wealth</p></li>
                                           </ul>
-                                            <h5>Rating:  </h5>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>                                  
                                     </div>
                                 </div><!-- /.actor -->
                             </div>
@@ -433,12 +425,6 @@
                                             <li><a href="#"><i class="fa fa-graduation-cap"></i><h5>Education</h5></a></li>
                                             <li><p>"The most effective weapon in which we can use to change the world" ~ Nelson Mendela</p></li>
                                           </ul>
-                                            <h5>Rating:  </h5>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>                                  
                                     </div>
                                 </div><!-- /.actor -->
                             </div>
@@ -450,17 +436,11 @@
                                     <img alt="img" src="img/actors/01.png">
                                     </div>
                                     <div class="details">
-                                          <ul class="social">
-                                            <li><a href="#"><i class="fa fa-home"></i><h5>Housing</h5></a></li>
-                                            <li><p>Everybody has a dream to own a home</p></li>                                         
-                                          </ul>
-                                            <h5>Rating:  </h5>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>                                  
-                                    </div>
+                                      <ul class="social">
+                                        <li><a href="#"><i class="fa fa-home"></i><h5>Housing</h5></a></li>
+                                        <li><p>Everybody has a dream to own a home</p></li>                                         
+                                      </ul>
+                                </div>
                                 </div><!-- /.actor -->
                             </div>
                         </div><!-- /.item -->
@@ -475,12 +455,6 @@
                                             <li><a href="#"><i class="fa fa-cutlery"></i><h5>Food</h5></a></li>
                                             <li><p>"Food is not rationale. It is culture, habit, craving and identity." ~ Jonathan Safran Foer</p></li>                                         
                                           </ul>
-                                            <h5>Rating:  </h5>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>                                  
                                     </div>
                                 </div><!-- /.actor -->
                             </div>
@@ -496,12 +470,6 @@
                                               <li><a href="#"><i class="fa fa-subway"></i><h5>Transportation</h5></a></li>
                                               <li><p>Whether you own a car or take a bus, in the end, everyone is a pedestrain.</p></li>
                                           </ul>
-                                            <h5>Rating:  </h5>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>                                  
                                     </div>
                                 </div><!-- /.actor -->
                             </div>
@@ -517,131 +485,152 @@
                                             <li><a href="#"><i class="fa fa-female"></i><h5>Women in Societies</h5></a></li>
                                             <li><p>Many women do noble things, but you surpass them all.</p></li>
                                           </ul>
-                                            <h5>Rating:  </h5>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>                                  
                                     </div>
                                 </div><!-- /.actor -->
                             </div>
                         </div><!-- /.item -->
-        			
-        		</div><!-- /.col-lg-12 -->        
-    		</div><!-- /.row -->  
+                    
+                </div><!-- /.col-lg-12 -->
+            </div><!-- /.row -->  
+        </div><!-- /.container -->          
+        <div class="container"> 
+            <div class="row">      
+                <div class="col-lg-12">
+                <h1 class="section-title">The Places</h1>
+                
+                    <div class="owl-actors owl-carousel owl-theme">
+                        
+                        <div class="item" >
+                            <div class="col-md-12 wp6">
+                                <div class="actor">
+                                    <div class="avatar">
+                                    <img alt="img" src="img/actors/01.png">
+                                    </div>
+                                    <div class="details">
+                                          <ul class="social">
+                                            <li><a href="#"><i class="fa fa-money"></i><h5>Cambodia</h5></a></li>
+                                            <li><p>Hidden Truth</p></li>
+                                          </ul>
+                                    </div>
+                                </div><!-- /.actor -->
+                            </div>
+                        </div><!-- /.item -->
+                    
+                </div><!-- /.col-lg-12 -->
+            </div><!-- /.row -->  
         </div><!-- /.container -->          
 	</section><!-- /#actors --> 
     
 
     <!-- Blog Section -->
-    <section id="blog">
+    <!--section id="blog">
     <div class="container"> 
         <div class="row">      
         <div class="col-lg-12 wp9 delay-05s">
         <h1 class="section-title">Production Blog<i class="fa fa-calendar-o"></i></h1>
 
-           <div id="owl-blog">
+           <div id="owl-blog"-->
                   
                <!-- 01 -->
-			   <div class="item">
+			   <!--div class="item">
                <div class="prev-blog-item">
                     <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                     <a href="blog-page.html">View blog post</a>
-               </div><!-- /.prev-blog-item -->   
+               </div--><!-- /.prev-blog-item -->   
 
-               <div class="blog-item">
+               <!--div class="blog-item">
                 	<div class="blog-item-img"><img src="img/blog/01.jpg" alt=""></div>
                     
                     <div class="blog-item-info page-scroll">
                     <span>08</span>
                     <small>Feb</small>
                     <a href="blog-page.html#comments-area"><i class="fa fa-comments-o"></i><small>145</small></a>
-                    </div><!-- /.blog-item-info --> 
+                    </div--><!-- /.blog-item-info --> 
                     
-                    <div class="blog-item-text">
+                    <!--div class="blog-item-text">
                     <h3><a href="blog-page.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
-                    </div><!-- /.blog-item-text --> 
+                    </div--><!-- /.blog-item-text --> 
                     
-                </div>
+                <!--/div>
 
                 <div class="next-blog-item">
                     <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                     <a href="blog-page.html">View blog post</a>
-                </div><!-- /.prev-blog-item --> 
-           		</div><!-- /.item --> 
+                </div--><!-- /.prev-blog-item --> 
+           		<!--/div--><!-- /.item --> 
            
  				<!-- 02 -->
-			   	<div class="item">
+			   	<!--div class="item">
                	<div class="prev-blog-item">
                     <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                     <a href="blog-page.html">View blog post</a>
-               	</div><!-- /.prev-blog-item -->   
+               	</div--><!-- /.prev-blog-item -->   
 
-               	<div class="blog-item">
+               	<!--div class="blog-item">
                 	<div class="blog-item-img"><img src="img/blog/02.jpg" alt=""></div>
                     
                     <div class="blog-item-info page-scroll">
                     <span>08</span>
                     <small>Feb</small>
                     <a href="blog-page.html#comments-area"><i class="fa fa-comments-o"></i><small>145</small></a>
-                    </div><!-- /.blog-item-info --> 
+                    </div--><!-- /.blog-item-info --> 
                     
-                    <div class="blog-item-text">
+                    <!--div class="blog-item-text">
                     <h3><a href="blog-page.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
-                    </div><!-- /.blog-item-text --> 
-               	 </div>
+                    </div--><!-- /.blog-item-text --> 
+               	 <!--/div>
 
                  <div class="next-blog-item">
                     <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                     <a href="blog-page.html">View blog post</a>
-                 </div><!-- /.prev-blog-item --> 
-          	    </div><!-- /.item -->           
+                 </div--><!-- /.prev-blog-item --> 
+          	    <!--/div--><!-- /.item -->           
            
 				<!-- 03 -->
-			    <div class="item">
+			    <!--div class="item">
                 <div class="prev-blog-item">
                     <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                     <a href="blog-page.html">View blog post</a>
-                </div><!-- /.prev-blog-item -->   
+                </div--><!-- /.prev-blog-item -->   
 
-                <div class="blog-item">
+                <!--div class="blog-item">
                 	<div class="blog-item-img"><img src="img/blog/03.jpg" alt=""></div>
                     
                     <div class="blog-item-info page-scroll">
                     <span>08</span>
                     <small>Feb</small>
                     <a href="blog-page.html#comments-area"><i class="fa fa-comments-o"></i><small>145</small></a>
-                    </div><!-- /.blog-item-info --> 
+                    </div--><!-- /.blog-item-info --> 
                     
-                    <div class="blog-item-text">
+                    <!--div class="blog-item-text">
                     <h3><a href="blog-page.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
-                    </div><!-- /.blog-item-text -->
-                 </div> 
+                    </div--><!-- /.blog-item-text -->
+                 <!--/div> 
 
                  <div class="next-blog-item">
                     <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                     <a href="blog-page.html">View blog post</a>
-                 </div><!-- /.prev-blog-item --> 
-          	 	 </div><!-- /.item --> 
-           </div><!-- /.owl-blog --> 
+                 </div--><!-- /.prev-blog-item --> 
+          	 	 <!--/div--><!-- /.item --> 
+           <!--/div--><!-- /.owl-blog --> 
               
-    	</div><!-- /.col-lg-12 --> 
-    </div><!-- /.row -->     	    
-	</div><!-- /.container --> 
-	</section><!-- /#blog -->  
+    	<!--/div--><!-- /.col-lg-12 --> 
+    <!--/div--><!-- /.row -->     	    
+	<!--/div--><!-- /.container --> 
+	<!--/section--><!-- /#blog -->  
 
 	<!-- Contact Section -->
     <section id="contact">
+
     <div class="overlay"></div>
     <div class="container text-center">
         <div class="row">
@@ -684,9 +673,18 @@
     <script src="js/lib/flipclock/flipclock.js"></script>
     <script src="js/lib/jquery.animateNumber.js"></script>
     <script src="js/lib/waypoints.min.js"></script>
-
+    <script src="js/lib/instafeed.min.js"></script>
+      
     <!-- Custom Theme JavaScript -->
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'awesome',
+            clientId: '07683e29087a46acb981549e0a075055'
+        });
+        feed.run();
+    </script>
     
 
 </body>

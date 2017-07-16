@@ -1749,7 +1749,7 @@ h1.section-title:after{
 #gallery {
 	padding: 0px 0px 0px 20px;
 	position:relative;
-	background-color: #47a64a;
+	background-color: #d0d0d0;
 	background-size:cover;
 	border-bottom: 2px solid #ffc107;
 }

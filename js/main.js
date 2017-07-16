@@ -153,7 +153,7 @@ function centerContent()
 // Owlslider Team
 
 
-    var owl = $("#owl-actors");
+    var owl = $(".owl-actors");
 	    owl.owlCarousel({
 	    itemsCustom : [
 				[0, 1],
